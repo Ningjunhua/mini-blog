@@ -1,0 +1,313 @@
+body,
+header,
+ul,
+li,
+p,
+div,
+html,
+span,
+h3,
+a {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+body {
+    font-family: '微软雅黑';
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 60%;
+    margin: 20px auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.user_right{
+    height: 35px;
+}
+.user_name {
+   
+}
+.user_name>img{
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+.user_name > div{
+    margin-left: 10px;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+.message{
+    left: calc( (100% - 80px) / 2 );
+    top: calc( (100% - 25px) / 2 );
+    position: fixed;
+    z-index: 10px;
+    height: 25px;
+    width: 80px; 
+}
+.success{
+    height: 25px;
+    width: 80px; 
+    text-align: center;
+    background: rgb(0,0,0,0.8);
+    border-radius: 5px;
+    /* color: #fff; */
+}
+    
+
+
+.has_user {
+    margin-top:7px;
+}
+.none_user{
+    margin-top:7px;
+}
+.has_user a,
+.has_user span,
+.none_user a {
+    margin-right: 5px;
+    float: left;
+    display: block;
+    padding: 5px 15px;
+    background: #1E9FFF;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.none_user a:hover{
+    color: #fff;
+    background: rgb(5, 125, 211);
+}
+.none_user a img{
+    margin-right:8px; 
+line-height: 30px;
+    width: 16px;
+    height: 16px;
+}
+.has_user a:hover{
+    color: #fff;
+    background: rgb(5, 125, 211);
+}
+.has_user a img{
+    margin-right:8px; 
+line-height: 30px;
+    width: 16px;
+    height: 16px;
+}
+
+.posts {
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.posts li {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+h2{
+    line-height: 60px;
+    float: left;
+   margin: 0;
+}
+h3 {
+    margin: 0;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #1E9FFF;
+    color: #fff;
+    border-radius: 5px;
+}
+.post_title{
+    margin-left: 20px;
+    height: 60px;
+    width:calc(100% - 40px);
+}
+.post_title p{
+    font-weight: bold;
+    margin-left: 15px;
+    line-height: 60px ;
+float: left;
+}
+
+.commit_content{
+    font-family: '微软雅黑';
+    border: none;
+    width: 97.5%;
+    height: 200px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.post_content p {
+    margin: 10px 0;
+    background: #eee;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.post_time {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.post_3 {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+.post_3 p {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.post_content {
+    padding: 0 20px;
+}
+
+.spost {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.spost_user {
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+}
+
+.edit {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+
+.edit p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.comment_wrap {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.submit {
+    display: block;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    background: #1E9FFF;
+    cursor: pointer;
+    color: #fff;
+    float: right;
+    margin-top: 20px;
+}
+
+.cmt_content {
+    background: #eee;
+    padding: 20px;
+    position: relative;
+    border-radius: 4px;
+    border-left: 3px solid  #1E9FFF;
+}
+
+.cmt_content:after {
+    content: '#content';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.cmt_name {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+
+.cmt_name a {
+    margin-left: 10px;
+}
+
+.cmt_content {
+    margin-top: 10px;
+}
+
+.form {
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.tips {
+    margin-top: 20px;
+    background-color: #1E9FFF;
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.create label {
+    display: block;
+    margin: 10px 0;
+}
+
+.comment_wrap form {
+    width: 100%;
+}
+
+.delete_comment,
+.delete_post {
+    cursor: pointer;
+}
+
+.delete_comment:hover,
+.delete_post:hover {
+    color: #E87E38;
+}
+
+a:hover {
+    color: #f60;
+}
+.user_right{
+    float: left
+}

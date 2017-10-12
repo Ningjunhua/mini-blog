@@ -1,0 +1,75 @@
+<% include header %>
+	<div class="container">
+		<form class="form create" method="post ">
+			<div>
+				<label>用户名：</label>
+				<input placeholder="用户名" type="text" name="name">
+			</div>
+			<div>
+				<label>密码：</label>
+				<input placeholder="密码" type="password" name="password" onkeydown="KeyDown()">
+			</div>
+			<div class="submit" id="login">登录</div>
+		</form>
+	</div>
+	<script>
+		$('.submit').click(() => {
+			console.log($('.form').serialize())
+			$.ajax({
+				url: "/signin",
+				data: $('.form').serialize(),
+				type: "POST",
+				cache: false,
+				dataType: 'json',
+				success: function (msg) {
+					if (!msg) {
+						$('.error').text('用户名或密码错误')
+						$('input').val('')
+						fade('.error')
+					}
+					else {
+						$('.success').text('登录成功')
+						fade('.success')
+						setTimeout(() => {
+							window.location.href = "/posts"
+
+						}, 2000)
+					}
+				},
+				error: function () {
+					alert('异常');
+				}
+			})
+		})
+		function KeyDown() {
+			if (event.keyCode == 13) {
+				console.log($('.form').serialize())
+				$.ajax({
+					url: "/signin",
+					data: $('.form').serialize(),
+					type: "POST",
+					cache: false,
+					dataType: 'json',
+					success: function (msg) {
+						if (!msg) {
+							$('.error').text('用户名或密码错误')
+							$('input').val('')
+							fade('.error')
+						}
+						else {
+							$('.success').text('登录成功')
+							fade('.success')
+							setTimeout(() => {
+								window.location.href = "/posts"
+
+							}, 1000)
+						}
+					},
+					error: function () {
+						alert('异常');
+					}
+				})
+			}
+		}
+	</script>
+	<% include footer %>
