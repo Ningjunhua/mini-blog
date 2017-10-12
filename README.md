@@ -43,7 +43,7 @@ $ use nodesql;
 $ git clone https://github.com/Ningjunhua/mini-blog.git
 ```
 ```
-$ cd Koa2-blog
+$ cd mini-blog
 ```
 ```
 $ cnpm i supervisor
